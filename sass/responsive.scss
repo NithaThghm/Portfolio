@@ -1,0 +1,49 @@
+/* -- Gestion du responsive */
+
+@media screen and (min-width: 576px){
+    
+
+
+}
+
+
+@media screen and (min-width: 737px){
+
+
+
+}
+ 
+
+ @media screen and (min-width: 990px){
+
+    /* -- Navigation Menu */
+    
+    .navContainer{
+        justify-content: center;
+    }
+
+    .burgerButton{
+        display: none;
+    }
+
+    .navTitlesContainer{
+        display: flex;
+        width: 500px;
+    }
+
+    .navTitle{
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px){
+
+    /* -- Navigation Menu */
+
+    .burgerButton{
+        display: none;
+    }
+    
+}
