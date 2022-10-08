@@ -1,0 +1,28 @@
+.skillsSession{
+    min-height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FCF9F8;
+}
+
+.skillsSession-main-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    outline: solid 1px red;
+}
+
+
+    .skillsSession-titles h2{
+        color: #DC4646;
+        font-size: 1.2em;
+    }
+
+    .skillsSession-titles h3{
+        width: 100%;
+        font-size: 1.3em;
+    }

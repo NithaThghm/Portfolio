@@ -1,0 +1,59 @@
+.welcomeBlocContainer{
+    
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FCF9F8;
+}
+
+.greetingBloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 80vh;
+    min-height: 32vh;
+    width: 85vw;
+    z-index: 1;
+}
+
+.greetingMessage{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.greetingMessage h1,H2{
+    font-size: 2em;
+}
+
+
+.greetingHello{
+    font-size: 3em;
+}
+
+.greetingText{
+    font-size: 1.7em; 
+}
+
+.welcomeIllus1{
+    position: absolute;
+    top: 90px;
+    right: 15px;
+
+    height: 200px;
+    width: 200px;
+}
+
+.welcomeIllus2{
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+
+    height: 300px;
+    width: 300px;
+}

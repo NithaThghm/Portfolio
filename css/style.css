@@ -8,17 +8,13 @@ body {
   width: 100vw;
 }
 
-header {
-  width: 100%;
-}
-
 .navContainer {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   height: 80px;
-  width: 100%;
-  z-index: 1;
+  width: 100vw;
+  z-index: 2;
   background-color: #073225;
 }
 
@@ -33,14 +29,14 @@ header {
 }
 
 .burgerButton {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 
 .navBurgerMenuSingleBar {
@@ -86,6 +82,133 @@ header {
   .burgerButton {
     display: none;
   }
+}
+.welcomeBlocContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCF9F8;
+}
+
+.greetingBloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 80vh;
+  min-height: 32vh;
+  width: 85vw;
+  z-index: 1;
+}
+
+.greetingMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.greetingMessage h1, H2 {
+  font-size: 2em;
+}
+
+.greetingHello {
+  font-size: 3em;
+}
+
+.greetingText {
+  font-size: 1.7em;
+}
+
+.welcomeIllus1 {
+  position: absolute;
+  top: 90px;
+  right: 15px;
+  height: 200px;
+  width: 200px;
+}
+
+.welcomeIllus2 {
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+
+.aboutSession {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FCF9F8;
+}
+
+.aboutSession-main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 900px;
+  padding: 0 20px;
+}
+
+.aboutSession-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.aboutSession-titles h2 {
+  color: #DC4646;
+  font-size: 1.2em;
+}
+
+.aboutSession-titles h3 {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.aboutSession-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutSession-profile-picture {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.skillsSession {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FCF9F8;
+}
+
+.skillsSession-main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  outline: solid 1px red;
+}
+
+.skillsSession-titles h2 {
+  color: #DC4646;
+  font-size: 1.2em;
+}
+
+.skillsSession-titles h3 {
+  width: 100%;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=style.css.map */
