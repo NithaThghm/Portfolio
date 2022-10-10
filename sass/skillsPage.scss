@@ -12,17 +12,37 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    padding: 0 20px;
-    outline: solid 1px red;
+    //height: 1050px;
+    padding: 20px 20px;
+
+    //background-color: lightblue;
+}
+
+.skillsSession-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 70px;
+    //margin-top: 20px;
+
+    outline: solid 1px black;
 }
 
 
-    .skillsSession-titles h2{
-        color: #DC4646;
-        font-size: 1.2em;
-    }
+.skillsSession-titles h2{
+    color: #DC4646;
+    font-size: 1.2em;
+    font-family: 'Roboto Flex', sans-serif;
+}
 
-    .skillsSession-titles h3{
-        width: 100%;
-        font-size: 1.3em;
-    }
+.skillsSession-titles h3{
+    width: 100%;
+    font-size: 1.7em;
+    font-family: 'Slabo 27px', serif;
+}
+
+.skillsSession-logo{
+    height: 80px;
+    width: 80px;
+}

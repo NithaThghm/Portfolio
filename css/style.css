@@ -16,6 +16,7 @@ body {
   width: 100vw;
   z-index: 2;
   background-color: #073225;
+  transition: all 0.5s ease-in-out;
 }
 
 .navTitlesContainer {
@@ -28,26 +29,43 @@ body {
   text-decoration: none;
 }
 
-.burgerButton {
+/* __ Burger Menu button */
+.menu-button {
   position: absolute;
-  top: 20px;
+  top: 24px;
   right: 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  height: 35px;
-  width: 35px;
+  align-items: center;
+  height: 28px;
+  width: 32px;
 }
 
-.navBurgerMenuSingleBar {
-  height: 6px;
+.menu-button-burger {
+  height: 4px;
   width: 100%;
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* __ Animation */
+.menu-open .burger-2 {
+  background: transparent;
+}
+
+.menu-open .burger-1 {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.menu-open .burger-3 {
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .showMenu {
   height: 100vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .showMenu .navTitlesContainer {
@@ -138,43 +156,44 @@ body {
 .aboutSession {
   min-height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #FCF9F8;
 }
 
 .aboutSession-main-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  height: 900px;
-  padding: 0 20px;
+  height: 1050px;
+  padding: 20px 20px;
 }
 
 .aboutSession-titles {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60px;
-  margin-top: 20px;
+  height: 70px;
+  outline: solid 1px black;
 }
 
 .aboutSession-titles h2 {
   color: #DC4646;
   font-size: 1.2em;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .aboutSession-titles h3 {
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.7em;
+  font-family: "Slabo 27px", serif;
 }
 
 .aboutSession-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
+  height: 850px;
   width: 100%;
+  outline: solid 1px black;
 }
 
 .aboutSession-profile-picture {
@@ -182,6 +201,51 @@ body {
   width: 250px;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+.aboutSession-description {
+  text-align: justify;
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
+}
+
+.aboutSession-button {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  outline: solid 1px black;
+}
+
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
 }
 
 .skillsSession {
@@ -197,18 +261,32 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  padding: 0 20px;
-  outline: solid 1px red;
+  padding: 20px 20px;
+}
+
+.skillsSession-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+  outline: solid 1px black;
 }
 
 .skillsSession-titles h2 {
   color: #DC4646;
   font-size: 1.2em;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .skillsSession-titles h3 {
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.7em;
+  font-family: "Slabo 27px", serif;
+}
+
+.skillsSession-logo {
+  height: 80px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

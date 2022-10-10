@@ -1,11 +1,11 @@
 //Afficher le menu déroulant au clid du burger menu
 
 const navContainer = document.querySelector(".navContainer");
-const burgerButton = document.querySelector('.burgerButton');
+const menuButton = document.querySelector('.menu-button');
 
-burgerButton.addEventListener("click", ()=>{
+menuButton.addEventListener("click", ()=>{
     navContainer.classList.toggle("showMenu");
-    
+    menuButton.classList.toggle("menu-open"); 
 })
 
 
