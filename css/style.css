@@ -49,7 +49,6 @@ body {
 
 /* __ Burger Menu button */
 .menu-button {
-  outline: solid 1px red;
   position: absolute;
   top: 24px;
   right: 20px;
@@ -66,7 +65,7 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 4px;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* __ Burger Menu : Animation */
@@ -86,6 +85,22 @@ body {
     transform: translateY(-9px) rotate(-45deg);
   }
 }
+@keyframes cross-to-burger-positive {
+  0% {
+    transform: translateY(9px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0);
+  }
+}
+@keyframes cross-to-burger-negative {
+  0% {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0);
+  }
+}
 .menu-open .burger-2 {
   background: transparent;
   transform: translateX(100%);
@@ -96,8 +111,16 @@ body {
   animation: burger-to-cross-positive 1s ease-in-out forwards;
 }
 
+.menu-close .burger-1 {
+  animation: cross-to-burger-positive 1s ease-in-out forwards;
+}
+
 .menu-open .burger-3 {
   animation: burger-to-cross-negative 1s ease-in-out forwards;
+}
+
+.menu-close .burger-3 {
+  animation: cross-to-burger-negative 1s ease-in-out forwards;
 }
 
 .showMenu {

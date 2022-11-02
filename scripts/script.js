@@ -8,10 +8,14 @@ menuButton.addEventListener("click", ()=>{
     if(navContainer.classList.contains("showMenu")){
         navContainer.classList.toggle("showMenu");
         menuButton.classList.toggle("menu-open");
+        menuButton.classList.toggle("menu-close");
         
     }else{
         navContainer.classList.toggle("showMenu");
         menuButton.classList.toggle("menu-open");
+        if(menuButton.classList.toggle("menu-close")){
+            menuButton.classList.toggle("menu-close");
+        }
     }
      
 })
