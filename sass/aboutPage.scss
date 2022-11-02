@@ -35,6 +35,18 @@
         font-family: 'Roboto Flex', sans-serif;
     }
 
+    .aboutSession-titles h2::before {
+        content: "";
+        position: absolute;
+        ///left: 7%;
+        //top: 16px;
+        width: 50px;
+        height: 14px;
+        transform: skew(-12deg) translateX(0%);
+        background: rgba(238,111,87,0.5);
+        z-index: -1;
+      }
+
     .aboutSession-titles h3{
         width: 100%;
         font-size: 1.7em;

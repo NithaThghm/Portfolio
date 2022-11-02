@@ -8,6 +8,20 @@ body {
   width: 100vw;
 }
 
+.bg-image-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: coral;
+}
+
+.bg-image {
+  position: relative;
+  width: 100%;
+}
+
 .navContainer {
   position: fixed;
   display: flex;
@@ -15,7 +29,7 @@ body {
   height: 80px;
   width: 100vw;
   z-index: 2;
-  background-color: #073225;
+  background-color: transparent;
   transition: all 0.5s ease-in-out;
 }
 
@@ -29,8 +43,13 @@ body {
   text-decoration: none;
 }
 
+.navTitle {
+  font-family: "Lato", sans-serif;
+}
+
 /* __ Burger Menu button */
 .menu-button {
+  outline: solid 1px red;
   position: absolute;
   top: 24px;
   right: 20px;
@@ -38,29 +57,47 @@ body {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 28px;
-  width: 32px;
+  height: 20px;
+  width: 30px;
 }
 
 .menu-button-burger {
-  height: 4px;
+  height: 2px;
   width: 100%;
   background-color: #fff;
   border-radius: 4px;
   transition: all 0.5s ease-in-out;
 }
 
-/* __ Animation */
+/* __ Burger Menu : Animation */
+@keyframes burger-to-cross-positive {
+  50% {
+    transform: translateY(9px);
+  }
+  100% {
+    transform: translateY(9px) rotate(45deg);
+  }
+}
+@keyframes burger-to-cross-negative {
+  50% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
 .menu-open .burger-2 {
   background: transparent;
+  transform: translateX(100%);
+  display: hidden;
 }
 
 .menu-open .burger-1 {
-  transform: translateY(12px) rotate(45deg);
+  animation: burger-to-cross-positive 1s ease-in-out forwards;
 }
 
 .menu-open .burger-3 {
-  transform: translateY(-12px) rotate(-45deg);
+  animation: burger-to-cross-negative 1s ease-in-out forwards;
 }
 
 .showMenu {
@@ -80,13 +117,11 @@ body {
 
 /* -- Gestion du responsive */
 @media screen and (min-width: 990px) {
-  /* -- Navigation Menu */
+  /* __ Navigation Menu */
   .navContainer {
     justify-content: center;
   }
-  .burgerButton {
-    display: none;
-  }
+  /* __ Burger Menu button */
   .navTitlesContainer {
     display: flex;
     width: 500px;
@@ -97,9 +132,7 @@ body {
 }
 @media screen and (min-width: 1281px) {
   /* -- Navigation Menu */
-  .burgerButton {
-    display: none;
-  }
+  /* __ Burger Menu button */
 }
 .welcomeBlocContainer {
   height: 100vh;
@@ -107,7 +140,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FCF9F8;
+  background-repeat: none;
+  background-size: 100vw auto;
+  background-position-y: -115px;
 }
 
 .greetingBloc {
@@ -178,6 +213,16 @@ body {
   color: #DC4646;
   font-size: 1.2em;
   font-family: "Roboto Flex", sans-serif;
+}
+
+.aboutSession-titles h2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 14px;
+  transform: skew(-12deg) translateX(0%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
 }
 
 .aboutSession-titles h3 {
@@ -284,9 +329,28 @@ body {
   font-family: "Slabo 27px", serif;
 }
 
-.skillsSession-logo {
+.logo {
   height: 80px;
   width: 80px;
+  background-color: lightcyan;
+  object-fit: cover;
+}
+
+.logo-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bloc {
+  outline: solid black 1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -42,7 +42,28 @@
     font-family: 'Slabo 27px', serif;
 }
 
-.skillsSession-logo{
+.logo{
     height: 80px;
     width: 80px;
+    background-color: lightcyan;
+    object-fit: cover;
+}
+
+.logo-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bloc
+{
+    outline: solid black 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
 }

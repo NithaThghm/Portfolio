@@ -1,6 +1,6 @@
 .navContainer{
     position: fixed;
-    display: flex;
+    display:  flex;
     align-items: center;
 
     height: 80px;
@@ -8,7 +8,7 @@
 
     z-index: 2;
 
-    background-color: #073225;
+    background-color: transparent;
     //opacity: 0.8;
     transition: all .5s ease-in-out;
     
@@ -25,9 +25,14 @@
     text-decoration: none;
 }
 
+.navTitle{
+    font-family: 'Lato', sans-serif;
+}
+
 /* __ Burger Menu button */
 
     .menu-button{
+        outline: solid 1px red;
         position: absolute;
         top: 24px;
         right: 20px;
@@ -37,34 +42,57 @@
         justify-content: space-between;
         align-items: center;
 
-        height: 28px;
-        width: 32px;
+        height: 20px;
+        width: 30px;
     }
 
     .menu-button-burger
     {
-        height: 4px;
+        height: 2px;
         width: 100%;
         background-color: #fff;
         border-radius: 4px;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
     }
 
-    /* __ Animation */
+    /* __ Burger Menu : Animation */
+
+    @keyframes burger-to-cross-positive{
+        50%{
+            transform: translateY(9px);
+        }
+        100%{
+            transform: translateY(9px) rotate(45deg);
+        }
+    }
+
+    @keyframes burger-to-cross-negative{
+        50%{
+            transform: translateY(-9px);
+        }
+        100%{
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+
     .menu-open .burger-2
     {
         background: transparent;
+        transform: translateX(100%);
+        display: hidden;
     }
 
     .menu-open .burger-1
     {
-        transform: translateY(12px) rotate(45deg) ;
+        animation: burger-to-cross-positive 1s ease-in-out forwards;
     }
 
     .menu-open .burger-3
     {
-        transform: translateY(-12px) rotate(-45deg) ;
+        animation: burger-to-cross-negative 1s ease-in-out forwards;
     }
+
     
 
 // Apparition du menu déroulant

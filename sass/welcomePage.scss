@@ -8,8 +8,13 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #FCF9F8;
-}
+    //background-color: #FCF9F8;
+    //background-image: url('/assets/images/header_background.jpg');
+    background-repeat: none;
+    background-size: 100vw auto;
+    background-position-y: -115px;
+
+}   
 
 .greetingBloc{
     display: flex;

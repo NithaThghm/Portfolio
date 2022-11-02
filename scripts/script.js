@@ -4,8 +4,16 @@ const navContainer = document.querySelector(".navContainer");
 const menuButton = document.querySelector('.menu-button');
 
 menuButton.addEventListener("click", ()=>{
-    navContainer.classList.toggle("showMenu");
-    menuButton.classList.toggle("menu-open"); 
+
+    if(navContainer.classList.contains("showMenu")){
+        navContainer.classList.toggle("showMenu");
+        menuButton.classList.toggle("menu-open");
+        
+    }else{
+        navContainer.classList.toggle("showMenu");
+        menuButton.classList.toggle("menu-open");
+    }
+     
 })
 
 
