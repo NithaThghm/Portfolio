@@ -1,55 +1,74 @@
 .navContainer{
+    
+    display:  none;
     position: fixed;
-    display:  flex;
+    z-index: 2;
     align-items: center;
 
-    height: 80px;
+    height: 100vh;
     width: 100vw;
 
-    z-index: 2;
-
-    background-color: transparent;
-    //opacity: 0.8;
-    transition: all .5s ease-in-out;
+    background-color: #fff;
     
 }
 
 .navTitlesContainer{
-    display: none;
+    outline: solid 1px red;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
+    align-items: start;
+    height: 45vh;
+    margin-left: 20px;
 }
 
 .navTitlesContainer a{
     
-    color: #fff;
+    color: #000;
     text-decoration: none;
+    font-size: 2em;
 }
 
 .navTitle{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lustria', serif;
 }
 
 /* __ Burger Menu button */
 
-    .menu-button{
-        position: absolute;
+    .menu-button-circle{
+        outline: solid 0.5px #000;
+        position: fixed;
         top: 24px;
         right: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 2px 1px #000;
+        z-index: 3;
+        
+    }
 
+    .menu-button{
+        
+        height: 21px;
+        width: 30px;
+        
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
-
-        height: 20px;
-        width: 30px;
+  
     }
 
     .menu-button-burger
     {
         height: 2px;
         width: 100%;
-        background-color: #fff;
+        background-color: #000;
         border-radius: 4px;
         transition: all 1s ease-in-out;
 
@@ -92,6 +111,7 @@
             transform: translateY(-9px) rotate(0);
         }
     }
+
     .menu-open .burger-2
     {
         background: transparent;
@@ -101,22 +121,22 @@
 
     .menu-open .burger-1
     {
-        animation: burger-to-cross-positive 1s ease-in-out forwards;
+        animation: burger-to-cross-positive 0.5s ease-in-out forwards;
     }
 
     .menu-close .burger-1
     {
-        animation: cross-to-burger-positive 1s ease-in-out forwards;
+        animation: cross-to-burger-positive 0.5s ease-in-out forwards;
     }
 
     .menu-open .burger-3
     {
-        animation: burger-to-cross-negative 1s ease-in-out forwards;
+        animation: burger-to-cross-negative 0.5s ease-in-out forwards;
     }
 
     .menu-close .burger-3
     {
-        animation: cross-to-burger-negative 1s ease-in-out forwards;
+        animation: cross-to-burger-negative 0.5s ease-in-out forwards;
     }
 
     
@@ -124,18 +144,5 @@
 // Apparition du menu déroulant
 
 .showMenu{
-    height: 100vh;
-    transition: all .5s ease-in-out;
-}
-
-
-.showMenu .navTitlesContainer{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: start;
-    height: 45vh;
-    margin-left: 20px;
-    
-    font-size: 2em;
 }
