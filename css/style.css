@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -145,27 +146,6 @@ body {
   display: flex;
 }
 
-/* -- Gestion du responsive */
-@media screen and (min-width: 990px) {
-  /* __ Navigation Menu */
-  .navContainer {
-    justify-content: center;
-  }
-  /* __ Burger Menu button */
-  .navTitlesContainer {
-    display: flex;
-    width: 500px;
-  }
-  .navTitle {
-    font-size: 20px;
-  }
-  /* __ WelcomePage */
-}
-@media screen and (min-width: 1281px) {
-  /* -- Navigation Menu */
-  /* __ Burger Menu button */
-  /* __ WelcomePage */
-}
 .welcomeBlocContainer {
   outline: solid 1px red;
   height: 100vh;
@@ -185,10 +165,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 80vh;
-  min-height: 32vh;
+  height: 60vh;
   width: 85vw;
   z-index: 1;
+  color: #fff;
+  text-shadow: 2px 1px #000;
+  text-align: center;
 }
 
 .greetingMessage {
@@ -197,15 +179,22 @@ body {
 }
 
 .greetingMessage h1, H2 {
-  font-size: 2em;
+  font-size: 2.2em;
+  text-align: center;
 }
 
 .greetingHello {
-  font-size: 3em;
+  font-size: 4em;
+}
+
+.greetingHello::after {
+  content: "👋";
+  text-shadow: none;
+  margin-left: 20px;
 }
 
 .greetingText {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 .welcomeIllus1 {
@@ -387,6 +376,41 @@ body {
   align-items: center;
   height: 100px;
   width: 100px;
+}
+
+/* -- Gestion du responsive */
+@media screen and (min-width: 737px) {
+  /* __ Welcome Page */
+  .greetingHello {
+    font-size: 6em;
+  }
+  .greetingText {
+    font-size: 2.5em;
+  }
+  .greetingMessage h1, H2 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 990px) {
+  /* __ Navigation Menu */
+  .navContainer {
+    justify-content: center;
+  }
+  /* __ Burger Menu button */
+  .navTitlesContainer {
+    display: flex;
+    width: 500px;
+  }
+  .navTitle {
+    font-size: 20px;
+  }
+  /* __ WelcomePage */
+}
+@media screen and (min-width: 1281px) {
+  /* -- Navigation Menu */
+  /* __ Burger Menu button */
+  /* __ WelcomePage */
 }
 
 /*# sourceMappingURL=style.css.map */
