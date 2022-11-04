@@ -1,123 +1,68 @@
-.aboutSession{
-    min-height: 100vh;
-    width: 100vw;
-    
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: space-between;
-    //background-color: lightcoral;
+.about{
+    background-color: rgba(237, 158, 118, 0.20);
 }
 
-.aboutSession-main-container{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    height: 1050px;
-    padding: 20px 20px;
-
-    //background-color: lightblue;
-}
-
-.aboutSession-titles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 70px;
-    //margin-top: 20px;
-
-    outline: solid 1px black;
-}
-
-    .aboutSession-titles h2{
-        color: #DC4646;
-        font-size: 1.2em;
-        font-family: 'Roboto Flex', sans-serif;
-    }
-
-    .aboutSession-titles h2::before {
-        content: "";
-        position: absolute;
-        ///left: 7%;
-        //top: 16px;
-        width: 50px;
-        height: 14px;
-        transform: skew(-12deg) translateX(0%);
-        background: rgba(238,111,87,0.5);
-        z-index: -1;
-      }
-
-    .aboutSession-titles h3{
-        width: 100%;
-        font-size: 1.7em;
-        font-family: 'Slabo 27px', serif;
-    }
-
-.aboutSession-content{
+.about-content{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 850px;
     width:100%;
-
-    //background-color: lightgreen ;
-    outline: solid 1px black;
-
 }
 
-.aboutSession-profile-picture{
+/* __ Profile Picture */
+
+.about-profile-picture{
+    margin: 30px 0px;
     height: 250px;
     width: 250px;
-    border-radius: 50%;
-    margin: 0 auto;
+    background-color: lightgray;
 }
 
-.aboutSession-description{
-    text-align: justify;
+/* __ Text */
+
+
+.about-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.1em;
     font-family: 'Lato', sans-serif;
 }
+.about-description p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 90%;
+}
 
-.aboutSession-button{
+/* __ CV downloader button */
+
+.about-cv-button{
     display: flex;
-    justify-content: end;
-    width:100%;
-    //margin-bottom: 20px;
-
-    outline: solid 1px black;
+    position: relative;
+    padding-top: 20px;
+    justify-content: flex-end;
+    width: 90%;
 }
 
+.about-cv-button a{
+   font-size: 1.2em;
 
-.button-1 {
-  background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  //padding: 10px 20px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 100px;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #F082AC;
+.about-cv-underline{
+    position: absolute;
+    z-index: -1;
+    height: 10%;
+    width: 5%;
+    bottom: 0;
+    transform: skew(-12deg) translateX(0%);
+    background-color: lightcoral;
+}
+
+/* __ CV downloader button aanimation*/
+
+.about-cv-button:hover .about-cv-underline{
+    cursor: pointer;
+    transform: skew(-12deg) scaleY(5) translateX(0%) translateY(-50%);
 }

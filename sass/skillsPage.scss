@@ -30,16 +30,31 @@
 }
 
 
-.skillsSession-titles h2{
-    color: #DC4646;
-    font-size: 1.2em;
-    font-family: 'Roboto Flex', sans-serif;
-}
+// .skillsSession-titles h2{
+//     color: #DC4646;
+//     font-size: 1.2em;
+//     font-family: 'Roboto Flex', sans-serif;
+// }
 
 .skillsSession-titles h3{
     width: 100%;
     font-size: 1.7em;
     font-family: 'Slabo 27px', serif;
+}
+
+.skillsSession-title{
+    position: relative;
+}
+
+.skillsSession-underline{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    height: 1.5em;
+    width: 100px;
+    bottom: 0;
+    transform: skew(-15deg) translateX(0%);
+    background-color: lightseagreen;
 }
 
 .logo{
