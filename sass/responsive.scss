@@ -33,6 +33,24 @@
 
 @media screen and (min-width: 737px){
 
+    /* __General */
+
+    .underline{
+        width: calc(100% + 10px);
+    }
+    
+    .section-title{
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        transform: translateX(5px);
+    }
+
+    .section-subtitle{
+        font-size: 1.6em;
+        text-align: left;
+    }
+    
+
     /* __ Welcome Page */
 
     .welcome-greetings{
@@ -55,7 +73,7 @@
     /* __ About Page */
 
     .about-content{
-        padding: 12vh 0;
+        padding: 5vh 0;
         justify-content: space-evenly;
     }
 
@@ -73,13 +91,12 @@
 
 
 }
- 
 
  @media screen and (min-width: 990px){
 
     /* __ Welcome Page */
 
-        .welcom-bloc{
+        .welcome-bloc{
             height: 65vh;
         }
 
@@ -99,6 +116,18 @@
         h1{
             font-size: 2.8em;
         }
+    
+    /* __ About Page */
+    .about-profile-picture{
+        margin: 30px 30px;
+        height: 275px;
+        width: 275px;
+    }
+
+    .about-description{
+        width: 700px;
+        font-size: 1.3em;
+    }
 
     /* __ Navigation Menu */
     
@@ -118,7 +147,6 @@
         font-size: 20px;
     }
 
-    /* __ WelcomePage */
     
     /* __ Skills Page */
     
@@ -138,8 +166,21 @@
     /* __ General */
 
     .main-wrapper{
-        width: 70%;
+        width: 80%;
     }
+
+    .underline{
+        width: calc(100% + 12px);
+    }
+    
+    .section-title{
+        transform: translateX(6px);
+    }
+
+    .section-subtitle{
+        font-size: 1.7em;
+    }
+
 
     /* -- Navigation Menu */
 
@@ -164,6 +205,24 @@
     h1{
         font-size: 3em;
     }
+
+    /* __ About Page */
+    .about-content{
+        padding: 6vh 0;
+        justify-content: center;
+    }
+
+    .about-description{
+        width: 730px;
+        font-size: 1.4em;
+    }
+
+    .about-profile-picture{
+        margin: 30px 30px;
+        height: 300px;
+        width: 300px;
+    }
+
 
     /* __ Skills Page */
     

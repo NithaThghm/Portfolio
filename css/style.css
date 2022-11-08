@@ -11,14 +11,13 @@ header {
 /* __ Variables */
 /* __ Separator */
 .section-separator {
-  height: 50px;
+  height: 100px;
   background: rgb(27, 41, 42);
-  background: linear-gradient(180deg, rgb(27, 41, 42) 0%, rgb(243, 248, 252) 45%);
+  background: linear-gradient(180deg, rgb(27, 41, 42) 2%, rgba(217, 218, 212, 0.3) 100%);
 }
 
 /* __ Wrapper */
 .main-wrapper {
-  outline: solid 1px yellow;
   display: flex;
   align-items: center;
   height: 100%;
@@ -28,13 +27,14 @@ header {
 
 /* __ Titles with underline */
 .title-with-underline-container {
-  width: fit-content;
   position: relative;
+  z-index: 1;
+  width: fit-content;
+  outline: solid 1px yellow;
 }
 
 .underline {
   position: absolute;
-  z-index: -1;
   height: 45%;
   width: calc(100% + 6px);
   bottom: 0;
@@ -45,6 +45,8 @@ header {
 
 /* __ Section titles styling */
 .section-title {
+  position: relative;
+  z-index: 1;
   margin-top: 20px;
   font-family: "Mada", sans-serif;
   font-size: 1.2em;
@@ -282,8 +284,11 @@ h1 {
 
 .about {
   min-height: 70vh;
-  background-color: rgba(217, 218, 212, 0.3);
-  position: relative;
+  background-color: rgb(217, 218, 212);
+}
+
+.about-bloc {
+  width: 100%;
 }
 
 .about-content {
@@ -323,8 +328,9 @@ h1 {
 
 /* __ CV downloader button */
 .about-cv-button {
-  display: flex;
   position: relative;
+  z-index: 1;
+  display: flex;
   padding-top: 20px;
   margin-bottom: 20px;
   justify-content: flex-end;
@@ -332,9 +338,11 @@ h1 {
 }
 
 .about-cv-button a {
+  outline: solid 1px red;
+  position: relative;
   font-size: 1.2em;
-  text-shadow: 0.5px 0.5px #1B292A;
-  color: rgba(217, 218, 212, 0.3);
+  text-shadow: 0.5px 0.5px #8BD3E6;
+  color: #1B292A;
 }
 
 .about-cv-underline {
@@ -344,10 +352,14 @@ h1 {
   width: 5%;
   bottom: 0;
   transform: skew(-12deg) translateX(0%) scaleX(100%);
-  background-color: #8BD3E6;
+  background-color: #BF9000;
 }
 
 /* __ CV downloader button aanimation*/
+.about-cv-button:hover a {
+  color: #F3F8FC;
+}
+
 .about-cv-button:hover .about-cv-underline {
   cursor: pointer;
   transform: skew(-12deg) scaleY(5) translateX(0%) translateY(-50%);
@@ -358,7 +370,7 @@ h1 {
   min-height: 70vh;
   position: relative;
   z-index: -2;
-  background-color: rgba(217, 218, 212, 0.3);
+  background-color: rgb(217, 218, 212);
 }
 
 .skills-content {
@@ -431,6 +443,19 @@ h1 {
   }
 }
 @media screen and (min-width: 737px) {
+  /* __General */
+  .underline {
+    width: calc(100% + 10px);
+  }
+  .section-title {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    transform: translateX(5px);
+  }
+  .section-subtitle {
+    font-size: 1.6em;
+    text-align: left;
+  }
   /* __ Welcome Page */
   .welcome-greetings {
     font-size: 3.9em;
@@ -447,7 +472,7 @@ h1 {
   }
   /* __ About Page */
   .about-content {
-    padding: 12vh 0;
+    padding: 5vh 0;
     justify-content: space-evenly;
   }
   .about-description {
@@ -460,7 +485,7 @@ h1 {
 }
 @media screen and (min-width: 990px) {
   /* __ Welcome Page */
-  .welcom-bloc {
+  .welcome-bloc {
     height: 65vh;
   }
   .welcome-greetings {
@@ -476,6 +501,16 @@ h1 {
   h1 {
     font-size: 2.8em;
   }
+  /* __ About Page */
+  .about-profile-picture {
+    margin: 30px 30px;
+    height: 275px;
+    width: 275px;
+  }
+  .about-description {
+    width: 700px;
+    font-size: 1.3em;
+  }
   /* __ Navigation Menu */
   .navContainer {
     justify-content: center;
@@ -488,7 +523,6 @@ h1 {
   .navTitle {
     font-size: 20px;
   }
-  /* __ WelcomePage */
   /* __ Skills Page */
   .logos-container {
     grid-template-columns: 150px 150px 150px 150px 150px;
@@ -500,7 +534,16 @@ h1 {
 @media screen and (min-width: 1281px) {
   /* __ General */
   .main-wrapper {
-    width: 70%;
+    width: 80%;
+  }
+  .underline {
+    width: calc(100% + 12px);
+  }
+  .section-title {
+    transform: translateX(6px);
+  }
+  .section-subtitle {
+    font-size: 1.7em;
   }
   /* -- Navigation Menu */
   /* __ Burger Menu button */
@@ -518,6 +561,20 @@ h1 {
   }
   h1 {
     font-size: 3em;
+  }
+  /* __ About Page */
+  .about-content {
+    padding: 6vh 0;
+    justify-content: center;
+  }
+  .about-description {
+    width: 730px;
+    font-size: 1.4em;
+  }
+  .about-profile-picture {
+    margin: 30px 30px;
+    height: 300px;
+    width: 300px;
   }
   /* __ Skills Page */
   .logos-container {

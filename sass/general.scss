@@ -21,21 +21,21 @@ $dev-bg: RGBA(185, 184, 181, 0.3);
 $primary-color: #1B292A; //dark-gunmetal
 $secondary-color: #BF9000; //light gold
 $tertiary-color: #F3F8FC; //himalayan white
-$quaternary-color: rgba(217, 218, 212, 0.3); //timberwolf
+$quaternary-color: rgba(217, 218, 212, 1); //timberwolf
 $quinary-color: #8BD3E6; //sky blue
 
 /* __ Separator */
 
 .section-separator{
-    height: 50px;
+    height: 100px;
     background: rgb(27,41,42);
-    background: linear-gradient(180deg, rgba(27,41,42,1) 0%, rgba(243,248,252,1) 45%); 
+    background: linear-gradient(180deg, rgba(27,41,42,1) 2%, rgba(217,218,212,0.3) 100%); 
 }
 
 /* __ Wrapper */
 
 .main-wrapper{
-    outline: solid 1px yellow;
+    //outline: solid 1px yellow;
     //z-index: 0;
     display: flex;
     align-items: center;
@@ -49,13 +49,14 @@ $quinary-color: #8BD3E6; //sky blue
 /* __ Titles with underline */
 
 .title-with-underline-container{
-    width: fit-content;
     position: relative;
+    z-index: 1;
+    width: fit-content;
+    outline: $outline-yellow;
 }
 
 .underline{
     position: absolute;
-    z-index: -1;
     height: 45%;
     width: calc(100% + 6px);
     bottom: 0;
@@ -68,6 +69,8 @@ $quinary-color: #8BD3E6; //sky blue
 
 .section-title{
     //outline: $outline red;
+    position: relative;
+    z-index: 1;
     margin-top: 20px;
     //padding-left: 10px;
     font-family: 'Mada', sans-serif;
@@ -76,8 +79,6 @@ $quinary-color: #8BD3E6; //sky blue
     transform: translateX(3px);
     color: $primary-color; 
 }
-
-
 
 .section-subtitle{
     outline: solid 1px brown;

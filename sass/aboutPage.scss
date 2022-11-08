@@ -1,11 +1,15 @@
 .about{
     min-height: 70vh;
     background-color: $quaternary-color;
-    position: relative;
-    //z-index: -2;
+}
+
+.about-bloc{
+    //background-color: $dev-bg;
+    width: 100%;
 }
 
 .about-content{
+    //background-color: lightcoral;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -47,8 +51,9 @@
 /* __ CV downloader button */
 
 .about-cv-button{
-    display: flex;
     position: relative;
+    z-index: 1;
+    display: flex;
     padding-top: 20px;
     margin-bottom: 20px;
     justify-content: flex-end;
@@ -56,10 +61,11 @@
 }
 
 .about-cv-button a{
-    //font-family: 'Lustria', serif;
+    outline: $outline red;
+    position: relative;
     font-size: 1.2em;
-    text-shadow: 0.5px 0.5px $primary-color;
-    color: $quaternary-color;
+    text-shadow: 0.5px 0.5px $quinary-color;
+    color: $primary-color;
 
 }
 
@@ -70,10 +76,13 @@
     width: 5%;
     bottom: 0;
     transform: skew(-12deg) translateX(0%) scaleX(100%);
-    background-color: $quinary-color;
+    background-color: $secondary-color;
 }
 
 /* __ CV downloader button aanimation*/
+.about-cv-button:hover a{
+    color: $tertiary-color;
+}
 
 .about-cv-button:hover .about-cv-underline{
     cursor: pointer;
