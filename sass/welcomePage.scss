@@ -1,75 +1,70 @@
-.welcomeBlocContainer{
+.todev{
+    display: none;
+}
 
-    outline: solid 1px red;
-    
+.welcome{
+    position: relative;
     height: 100vh;
     width: 100vw;
-    
     display: flex;
-
     justify-content: center;
     align-items: center;
-
-    background-image: url('/assets/images/pexels-simon-berger-1323550.jpg');
+    background-image: url('/assets/images/pexels-creative-vix-9754.jpg');
     background-repeat: no-repeat;
     background-size: 1920px 100vh;
-    background-position: bottom right;
-
-    font-family: 'Lustria', serif;
-    color: #000;
-
+    background-position: bottom;
+    z-index: -2;
 }   
 
-.greetingBloc{
+.welcome-bloc{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60vh;
-    width: 85vw;
-    z-index: 1;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    color: $tertiary-color;
+}
 
-    color: #fff;
-    text-shadow: 2px 1px #000;
+.welcome-greetings{
+    font-family: 'Prata', serif;
+    font-size: 3.5em;
+    text-shadow: 0.5px 0.5px $primary-color;
+}
 
+.welcome-underline{
+    position: absolute;
+    z-index: -1;
+    height: 45%;
+    width: 120%;
+    bottom: 0;
+    transform: skew(-13deg) translateX(-10%);
+    background-color: $secondary-color;
+    border-radius: 4%;
+}
+
+.welcome-emoji{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 4em;
     text-align: center;
 }
 
-.greetingMessage{
-
-    display: flex;
-    flex-direction: column;
-    
+.welcome-text{
+    font-size: 1.7em;
+    line-height: 1.7em;
+    font-family: 'Mada', sans-serif;
+    text-shadow: 1px 1px $primary-color;
+    text-align: center;
 }
 
-
-.greetingHello{
-    font-size: 4em;
+.welcome-name{
+    font-family: 'Prata', serif;
+    border-bottom: solid 1px $secondary-color;
+    line-height: 1.5em;
 }
 
-.greetingHello::after{
-    content: "👋";
-    text-shadow: none;
-    margin-left: 20px;
-}
-
-.greetingText{
-    font-size: 2em; 
-}
-
-.welcomeIllus1{
-    position: absolute;
-    top: 90px;
-    right: 15px;
-
-    height: 200px;
-    width: 200px;
-}
-
-.welcomeIllus2{
-    position: absolute;
-    bottom: 20px;
-    margin: auto;
-
-    height: 300px;
-    width: 300px;
+h1{
+    font-family: 'Lustria', serif;
+    font-size: 2.2em;
 }

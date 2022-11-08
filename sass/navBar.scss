@@ -2,7 +2,7 @@
     
     display:  none;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     align-items: center;
 
     height: 100vh;
@@ -36,7 +36,7 @@
 /* __ Burger Menu button */
 
     .menu-button-circle{
-        outline: solid 0.5px #000;
+        //outline: solid 0.5px $primary-color;
         position: fixed;
         top: 24px;
         right: 20px;
@@ -46,10 +46,9 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color: #fff;
-        box-shadow: 2px 1px #000;
-        z-index: 3;
-        
+        //background-color: $tertiary-color;
+        //box-shadow: 2px 1px #000;
+        z-index: 15;
     }
 
     .menu-button{
@@ -68,20 +67,29 @@
     {
         height: 2px;
         width: 100%;
-        background-color: #000;
+        background-color: $secondary-color;
         border-radius: 4px;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 1px 0px $primary-color;
 
     }
 
     /* __ Burger Menu : Animation */
 
+    .menu-button:hover{
+        cursor: pointer;
+    }
+
     @keyframes burger-to-cross-positive{
         50%{
             transform: translateY(9px);
         }
+        90%{
+            transform: translateY(9px) rotate(45deg);
+        }
         100%{
             transform: translateY(9px) rotate(45deg);
+            background-color: $primary-color; 
         }
     }
 
@@ -89,8 +97,12 @@
         50%{
             transform: translateY(-9px);
         }
+        90%{
+            transform: translateY(-9px) rotate(-45deg);
+        }
         100%{
             transform: translateY(-9px) rotate(-45deg);
+            background-color: $primary-color;
         }
     }
 
@@ -114,9 +126,10 @@
 
     .menu-open .burger-2
     {
-        background: transparent;
+        background-color: $primary-color;
+        opacity: 0;
         transform: translateX(100%);
-        display: hidden;
+        //display: hidden;
     }
 
     .menu-open .burger-1

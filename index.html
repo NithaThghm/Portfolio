@@ -7,14 +7,15 @@
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Flex:opsz,wght@8..144,300&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Mada&family=Prata&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <!-- <div class="bg-image-container">
         <img class="bg-image" src="/assets/images/header_background.jpg" alt="">
     </div> -->
+
     <header>
         <div class="menu-button-circle">
             <div class="menu-button">
@@ -23,7 +24,7 @@
                 <span class ="menu-button-burger burger-3"></span>
             </div>
         </div>
-
+    
         <nav class="navContainer">
             <div class="navTitlesContainer">
                 <a class="navTitle" href="">Home</a>
@@ -36,22 +37,24 @@
     </header>
 
     <main>
-        <section class="welcomeBlocContainer">
+        <section class="welcome">
             <!-- <img class="welcomeIllus1" src="./assets/illustrations/laptop-with-website-by-oblik-studio.svg" alt="illusttion of a laptop"> -->
-            <div class="greetingBloc">
-                <span class="greetingHello">Hello !<br/></span>
-
-                 <div class="greetingMessage">
-                    <span class="greetingText">Bienvenue sur mon portfolio.<br/>
-                    Moi c'est Nitha. Je suis </span>
+            <div class="main-wrapper">
+                <div class="welcome-bloc">
+                    <div class="title-with-underline-container">
+                        <h2 class="welcome-greetings">Hey !</h2>
+                        <div class="welcome-underline"></div>
+                    </div>
+                    <p class="welcome-emoji">👋</p>
+                    <p class="welcome-text">Bienvenue sur mon portfolio.<br/>Moi c'est <span class="welcome-name">Nitha.</span> et je suis</p>
+                    <h1>Développeur Web</h1>
+                    <p class="welcome-text todev">&
+                        <span>un grimpeur + randonneur amateur  </span>
+                        <span>un lecteur rêveur</span>
+                        <span>un cultiveur d'optimisme</span>
+                    </p>    
                 </div>
-    
-                <div class="greetingMessage">
-                    <h1>Développeur Web<h1/>
-                </div>
-
-            
-            </div>
+            </div>    
             <!-- <img class="welcomeIllus2" src="./assets/illustrations/desktop-workspace-by-oblik-studio.svg" alt="illusttion of a laptop"> -->
         </section>
 
@@ -59,105 +62,155 @@
 
         <section class="about">
             <div class="main-wrapper">
-
-                <div class="section-title-container">
-                    <h2 class="section-title">A PROPOS</h2>
-                    <div class="section-title-underline"></div>
-                </div>
-
-                <div class="section-subtitle">
-                    <h3>Quelques mots sur moi</h3>
-                </div>
-
-                <div class="about-content">
-                    <img class="about-profile-picture" src="" alt="photo de profil">
-                    <div class="about-description">
-                        
-                        <p>Après avoir exercé durant 5 ans en tant qu'ingénieur amélioration continue pour un groupe dans le domaine de la métallurgie, j'ai ressenti le besoin de changer d'univers professionnel.</p>
-                        <p>J'ai toujours eût une curiosité prononcé pour le monde du numérique, fasciné par son fonctionnement, ses technologies et son potentiel qui repousse toujours les limites du possible.</p>
-                        <p>Aujourd'hui le numérique est au coeur de nos sociétés et je suis intrigué par le futur d'internet.</p>
-                        <p>J'ai donc décidé d'être un acteur et de découvrir par moi-même les entrailles d'internet.</p>
-                        <p>J'ai choisi de me reconvertir en tant que développeur web et web mobile, ce fut un choix difficile à faire mais que je ne regrette absolument pas.</p>
-                        <p>Ce que j'apprends au quotidien me fascine et me passionne ! Vous êtes prêt à me faire une place dans votre équipe ?</p>
-                        
-                        <div class="about-cv-button">
-                            <a href="">CV</a>
-                            <div class="about-cv-underline"></div>
-                        </div>
-                            
+                <div class="about-bloc">
+                    <div class="title-with-underline-container">
+                        <h2 class="section-title">A PROPOS</h2>
+                        <div class="underline"></div>
                     </div>
-                   
-                </div>
 
+                    <div class="section-subtitle">
+                        <h3>Quelques mots sur moi</h3>
+                    </div>
+
+                    <div class="about-content">
+                        <img class="about-profile-picture" src="assets/images/20220827_160746.jpg" alt="photo de profil">
+                        <div class="about-description">
+                            
+                            <p>Après avoir exercé durant 5 ans en tant qu'ingénieur amélioration continue pour un groupe dans le domaine de la métallurgie, j'ai ressenti le besoin de changer d'univers professionnel.</p>
+                            <p>J'ai toujours eût une curiosité prononcé pour le monde du numérique, fasciné par son fonctionnement, ses technologies et son potentiel qui repousse toujours les limites du possible.</p>
+                            <p>Aujourd'hui le numérique est au coeur de nos sociétés et je suis intrigué par le futur d'internet.</p>
+                            <p>J'ai donc décidé d'être un acteur et de découvrir par moi-même les entrailles d'internet.</p>
+                            <p>J'ai choisi de me reconvertir en tant que développeur web et web mobile, ce fut un choix difficile à faire mais que je ne regrette absolument pas.</p>
+                            <p>Ce que j'apprends au quotidien me fascine et me passionne ! Vous êtes prêt à me faire une place dans votre équipe ?</p>
+                            
+                            <div class="about-cv-button">
+                                <a href="https://drive.proton.me/urls/ZXBNMTY6AC#MGYdUQwr33rN" target="_blank" rel="noopener noreferrer">CV</a>
+                                <div class="about-cv-underline"></div>
+                            </div>
+                                
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="skillsSession">
-            <div class="skillsSession-main-container">
-                <div class="skillsSession-titles">
-                    <div class="skillsSession-title">
-                        <h2 class="session-title">MES COMPETENCES</h2>
-                        <div class="skillsSession-underline"></div>
-                    </div>
-                    <h3>Les choses que je peux faire</h3>
+        <section class="skills">
+            <div class="main-wrapper">
+                <div>
+                <div class="title-with-underline-container">
+                    <h2 class="section-title">COMPETENCES</h2>
+                    <div class="underline"></div>
                 </div>
 
-                <div class="logo-container">
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/html5-logo.svg" alt=""></div>
-                        
-                        <span>HTML5</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/css3-logo.svg" alt=""></div>
-                        <span>CSS 3</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/js-logo.svg" alt=""></div>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/sass-logo.svg" alt=""></div>
-                        <span>Sass</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/npm-logo.svg" alt=""></div>
-                        <span>NPM</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/git-logo.svg" alt=""></div>
-                        <span>Git</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/github-logo.svg" alt=""></div>
-                        <span>Github</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/gitlab-logo.svg" alt=""></div>
-                        <span>Gitlab</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/docker-logo.svg" alt=""></div>
-                        <span>Docker</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/sql-logo.svg" alt=""></div>
-                        <span>SQL</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/mysql-logo.svg" alt=""></div>
-                        <span>MySql</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/symfony-logo.svg" alt=""></div>
-                        <span>Symfony</span>
-                    </div>
-                    <div class="logo-bloc">
-                        <div><img class="logo" src="./assets/Logos/php-logo.svg" alt=""></div>
-                        <span>PHP</span>
+                <div class="section-subtitle">
+                    <h3>Mes compétences de base</h3>
+                </div>
+
+                <div class="skills-content">
+                    <div class="logos-container">
+                        <div class="logo-bloc">
+                            <i class="devicon-html5-plain logo" alt="html5 logo"></i>
+                            <hr>
+                            <span>html5</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-css3-plain logo"></i>
+                            <hr>
+                            <span>css3</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-javascript-plain logo"></i>
+                            <hr>
+                            <span>javascript</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-bootstrap-plain logo"></i>
+                            <hr>
+                            <span>bootstrap</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-sass-plain logo"></i>
+                            <hr>
+                            <span>sass</span>
+                        </div>
+                        <!-- <div class="logo-bloc">
+                            <i class="devicon-npm-plain logo"></i>
+                            <hr>
+                            <span>NPM</span>
+                        </div> -->
+                        <div class="logo-bloc">
+                            <i class="devicon-git-plain logo"></i>
+                            <hr>
+                            <span>git</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-github-original logo"></i>
+                            <hr>
+                            <span>github</span>
+                        </div>
+                        <!-- <div class="logo-bloc">
+                            <div><img class="logo" src="./assets/Logos/gitlab-logo.svg" alt=""></div>
+                            <hr>
+                            <span>Gitlab</span>
+                        </div> -->
+                        <div class="logo-bloc">
+                            <i class="devicon-figma-plain logo"></i>
+                            <hr>
+                            <span>figma</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-docker-plain logo"></i>
+                            <hr>
+                            <span>docker</span>
+                        </div>
+                        <!-- <div class="logo-bloc">
+                            <div><img class="logo" src="./assets/Logos/sql-logo.svg" alt=""></div>
+                            <hr>
+                            <span>SQL</span>
+                        </div> -->
+                        <div class="logo-bloc">
+                            <i class="devicon-mysql-plain logo"></i>
+                            <hr>
+                            <span>mySql</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-symfony-original logo"></i>
+                            <hr>
+                            <span>symfony</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-php-plain logo"></i>
+                            <hr>
+                            <span>php</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-phpstorm-plain logo"></i>
+                            <hr>
+                            <span>php storm</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-vscode-plain logo"></i>
+                            <hr>
+                            <span>vs code</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-linux-plain logo"></i>
+                            <hr>
+                            <span>linux</span>
+                        </div>
+                        <div class="logo-bloc">
+                            <i class="devicon-ubuntu-plain logo"></i>
+                            <hr>
+                            <span>ubuntu</span>
+                        </div>
                     </div>
                 </div>
 
+                <div class="skills-text">
+                    <p>Les langages de programmation évoluant constament, je cherche continuellement à perpétuer mon apprentissage.</p>
+                </div>
+            </div>
             </div>
         </section>
 

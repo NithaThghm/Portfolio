@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-
 }
 
 // body{
@@ -10,58 +9,83 @@
 //     width: 100vw;
 // }
 
+header{
+    width: 100vw;
+}
+
 /* __ Variables */
 
-//$primary-color:;
-//$secondary-color:;
+$outline-yellow: solid 1px yellow;
+$outline: solid 1px;
+$dev-bg: RGBA(185, 184, 181, 0.3);
+$primary-color: #1B292A; //dark-gunmetal
+$secondary-color: #BF9000; //light gold
+$tertiary-color: #F3F8FC; //himalayan white
+$quaternary-color: rgba(217, 218, 212, 0.3); //timberwolf
+$quinary-color: #8BD3E6; //sky blue
 
 /* __ Separator */
 
 .section-separator{
-    outline: solid 1px brown;
     height: 50px;
-    background: rgb(53,44,55);
-    background: linear-gradient(180deg, rgba(53,44,55,1) 0%, rgba(219,133,125,1) 87%);
+    background: rgb(27,41,42);
+    background: linear-gradient(180deg, rgba(27,41,42,1) 0%, rgba(243,248,252,1) 45%); 
 }
 
 /* __ Wrapper */
 
 .main-wrapper{
-    outline: solid 1px #000;
-    position: relative;
+    outline: solid 1px yellow;
+    //z-index: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
     width: 90%;
-    padding-top: 20px;
+    //padding-top: 20px;
     margin: auto;
 }
 
 
-/* __ Session titles */
+/* __ Titles with underline */
 
-.section-title-container{
-    //outline: solid 1px brown;
-    display: inline-block;
+.title-with-underline-container{
+    width: fit-content;
     position: relative;
 }
 
-.section-title{
-    padding-left: 10px;
-    font-size: 1em;
-    color: #000; 
-}
-
-.section-title-underline{
+.underline{
     position: absolute;
     z-index: -1;
-    height: 50%;
-    width: 75%;
+    height: 45%;
+    width: calc(100% + 6px);
     bottom: 0;
-    transform: skew(-12deg) translateX(0%);
-    background-color: lightseagreen;
+    transform: skew(-13deg);
+    background-color: $secondary-color;
+    border-radius: 4%;
 }
 
+/* __ Section titles styling */
+
+.section-title{
+    //outline: $outline red;
+    margin-top: 20px;
+    //padding-left: 10px;
+    font-family: 'Mada', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    transform: translateX(3px);
+    color: $primary-color; 
+}
+
+
+
 .section-subtitle{
-    //outline: solid 1px brown;
+    outline: solid 1px brown;
     padding-top: 10px;
+    font-family: 'Lustria', serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: $primary-color;
 }
 
 .bg-image-container{

@@ -1,33 +1,48 @@
-.skillsSession{
-    min-height: 100vh;
-    width: 100vw;
+.skills {
+    display: flex;
+    min-height: 70vh;
+    // flex-direction: column;
+    // justify-content: space-between;
+    position: relative;
+    z-index: -2;
+    background-color: $quaternary-color;
+}
+
+.skills-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.skills-text{
+    display: flex;
+    align-items: center;
+    height: 150px;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #FCF9F8;
 }
 
-.skillsSession-main-container{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    //height: 1050px;
-    padding: 20px 20px;
+// .skillsSession-main-container {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: space-between;
+//     //height: 1050px;
+//     padding: 20px 20px;
 
-    //background-color: lightblue;
-}
+//     //background-color: lightblue;
+// }
 
-.skillsSession-titles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+// .skillsSession-titles {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
 
-    height: 70px;
-    //margin-top: 20px;
+//     height: 70px;
+//     //margin-top: 20px;
 
-    outline: solid 1px black;
-}
+//     outline: solid 1px black;
+// }
 
 
 // .skillsSession-titles h2{
@@ -36,49 +51,68 @@
 //     font-family: 'Roboto Flex', sans-serif;
 // }
 
-.skillsSession-titles h3{
-    width: 100%;
-    font-size: 1.7em;
-    font-family: 'Slabo 27px', serif;
+// .skillsSession-titles h3{
+//     width: 100%;
+//     font-size: 1.7em;
+//     font-family: 'Slabo 27px', serif;
+// }
+
+// .skillsSession-title{
+//     position: relative;
+// }
+
+// .skillsSession-underline{
+//     content:"";
+//     position: absolute;
+//     z-index: -1;
+//     height: 1.5em;
+//     width: 100px;
+//     bottom: 0;
+//     transform: skew(-15deg) translateX(0%);
+//     background-color: lightseagreen;
+// }
+
+.logo {
+    outline: solid 1px brown;
+    font-size: 425%;
+    // height: 40px;
+    // width: 40px;
+    //background-color: lightcyan;
+    // object-fit: cover;
+    color: $primary-color;
+    //filter: invert(100%) contrast(100%) sepia(0%);
 }
 
-.skillsSession-title{
-    position: relative;
-}
-
-.skillsSession-underline{
-    content:"";
-    position: absolute;
-    z-index: -1;
-    height: 1.5em;
-    width: 100px;
-    bottom: 0;
-    transform: skew(-15deg) translateX(0%);
-    background-color: lightseagreen;
-}
-
-.logo{
-    height: 80px;
-    width: 80px;
-    background-color: lightcyan;
-    object-fit: cover;
-}
-
-.logo-container
-{
-    display: flex;
-    flex-flow: row wrap;
+.logos-container {
+    outline: solid 1px brown;
+    display: grid;
+    grid-template-columns: 150px 150px;
     justify-content: center;
-    align-items: center;
+    place-items: center;
+    row-gap: 20px;
+    //flex-flow: row wrap;
+   
+    //align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.logo-bloc
-{
-    outline: solid black 1px;
+.logo-bloc {
+    //outline: solid black 1px;
+    //background-color: lightgreen;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
-    width: 100px;
+    //margin-bottom: 20px;
+    height: 110px;
+    width: 125px;
+}
+
+.logo-bloc span{
+    font-size: 0.9em;
+}
+
+.logo-bloc hr{
+    width: 40px;
 }
