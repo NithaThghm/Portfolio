@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -35,14 +36,14 @@ $quinary-color: #8BD3E6; //sky blue
 /* __ Wrapper */
 
 .main-wrapper{
-    //outline: solid 1px yellow;
+    outline: solid 1px yellow;
     //z-index: 0;
     display: flex;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     width: 90%;
     //padding-top: 20px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -71,7 +72,7 @@ $quinary-color: #8BD3E6; //sky blue
     //outline: $outline red;
     position: relative;
     z-index: 1;
-    margin-top: 20px;
+    //margin-top: 20px;
     //padding-left: 10px;
     font-family: 'Mada', sans-serif;
     font-size: 1.2em;
@@ -81,8 +82,7 @@ $quinary-color: #8BD3E6; //sky blue
 }
 
 .section-subtitle{
-    outline: solid 1px brown;
-    padding-top: 10px;
+    padding-top: 15px;
     font-family: 'Lustria', serif;
     font-size: 1.3em;
     text-align: center;

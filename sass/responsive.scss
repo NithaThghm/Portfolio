@@ -27,10 +27,16 @@
         grid-template-columns: 150px 150px 150px;
     }
 
+    .skills-text{
+        font-size: 1.2em;
+        text-align: left;
+    }
 
+
+}    .skills-text{
+    font-size: 1.2em;
+    text-align: left;
 }
-
-
 @media screen and (min-width: 737px){
 
     /* __General */
@@ -94,6 +100,24 @@
 
  @media screen and (min-width: 990px){
 
+    /* __ Navigation Menu */
+    
+    .navContainer{
+        justify-content: center;
+    }
+
+    /* __ Burger Menu button */   
+
+
+    .navTitlesContainer{
+        display: flex;
+        width: 500px;
+    }
+
+    .navTitle{
+        font-size: 20px;
+    }
+    
     /* __ Welcome Page */
 
         .welcome-bloc{
@@ -118,6 +142,7 @@
         }
     
     /* __ About Page */
+
     .about-profile-picture{
         margin: 30px 30px;
         height: 275px;
@@ -129,25 +154,6 @@
         font-size: 1.3em;
     }
 
-    /* __ Navigation Menu */
-    
-    .navContainer{
-        justify-content: center;
-    }
-
-    /* __ Burger Menu button */   
-
-
-    .navTitlesContainer{
-        display: flex;
-        width: 500px;
-    }
-
-    .navTitle{
-        font-size: 20px;
-    }
-
-    
     /* __ Skills Page */
     
     .logos-container{
@@ -156,6 +162,10 @@
 
     .logo-bloc span{
         font-size: 1.1em;
+    }
+
+    .skills-text{
+        font-size: 1.3em;
     }
 
 
@@ -228,6 +238,10 @@
     
     .logos-container{
         grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+    }
+
+    .skills-text{
+        font-size: 1.4em;
     }
     
 

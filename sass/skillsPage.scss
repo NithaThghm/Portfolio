@@ -1,25 +1,42 @@
 .skills {
+    outline: $outline red;
     display: flex;
-    min-height: 70vh;
+    min-height: 80vh;
     // flex-direction: column;
     // justify-content: space-between;
     position: relative;
-    z-index: -2;
+    //z-index: -2;
     background-color: $quaternary-color;
 }
 
+.skills-bloc{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .skills-content{
+    background-color: $dev-bg;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-around;
     align-items: center;
+    min-height: fit-content;
     width:100%;
+    font-family: 'Mada', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .skills-text{
+    outline: $outline red;
     display: flex;
     align-items: center;
-    height: 150px;
+    //height: 150px;
+    text-align: center;
     
 }
 
@@ -79,7 +96,6 @@
     // width: 40px;
     //background-color: lightcyan;
     // object-fit: cover;
-    color: $primary-color;
     //filter: invert(100%) contrast(100%) sepia(0%);
 }
 
@@ -104,6 +120,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    color: $primary-color;
     //margin-bottom: 20px;
     height: 110px;
     width: 125px;
@@ -115,4 +132,8 @@
 
 .logo-bloc hr{
     width: 40px;
+}
+
+.logo-bloc:hover{
+    color: #0C5D25;
 }
