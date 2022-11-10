@@ -2,6 +2,20 @@
 
 @media screen and (min-width: 576px){
 
+    /* __ Illustration */
+
+    .illustration-1{
+        width: 60%;
+        right: 0;
+        //transform: translateY(-160px);
+    }
+
+    .illustration-2{
+        width: 50%;
+        left: 0;
+        //transform: translateY(-160px);
+    }
+
     /* __ Welcome Page */
 
     .welcome-greetings{
@@ -54,6 +68,25 @@
     .section-subtitle{
         font-size: 1.6em;
         text-align: left;
+        padding-left: 20px;
+    }
+
+    footer{
+        font-size: 1.2em;
+    }
+
+    /* __ Illustration */
+
+    .illustration-1{
+        width: 55%;
+        //right: 5%;
+        //transform: translateY(-225px) translateX(40px);
+    }
+
+    .illustration-2{
+        width: 45%;
+        //right: 5%;
+        //transform: translateY(-225px) translateX(40px);
     }
     
 
@@ -92,6 +125,16 @@
     .logos-container{
         grid-template-columns: 150px 150px 150px 150px;
     }
+
+    /*__Contact Page */
+
+    .contact-email-container{
+        font-size: 1.4em;
+    }
+
+    .contact-logo{
+        font-size: 2.2em;
+    }
     
 
 
@@ -99,6 +142,20 @@
 }
 
  @media screen and (min-width: 990px){
+
+    /* __ General */
+    /* __ Illustration */
+
+    .illustration-1{
+        width: 50%;
+        //transform: translateY(-250px) translateX(40px);
+    }
+
+    .illustration-2{
+        width: 40%;
+        //left: 0;
+        //transform: translateY(-250px) translateX(40px);
+    }
 
     /* __ Navigation Menu */
     
@@ -189,6 +246,19 @@
 
     .section-subtitle{
         font-size: 1.7em;
+    }
+    
+    /* __ Illustration */
+
+    .illustration-1{
+        width: 40%;
+        //transform: translateY(-250px) translateX(40px);
+    }
+
+    .illustration-2{
+        width: 30%;
+        //left: 0;
+        //transform: translateY(-250px) translateX(40px);
     }
 
 

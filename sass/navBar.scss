@@ -8,12 +8,13 @@
     height: 100vh;
     width: 100vw;
 
-    background-color: #fff;
+    background-color: $tertiary-color;
+    overflow-y: hidden;
     
 }
 
 .navTitlesContainer{
-    outline: solid 1px red;
+    //outline: solid 1px red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -23,22 +24,46 @@
 }
 
 .navTitlesContainer a{
-    
     color: #000;
     text-decoration: none;
     font-size: 2em;
 }
 
-.navTitle{
+.nav-title{
+    position: relative;
+    z-index: 1;
     font-family: 'Lustria', serif;
+    font-size: 2.1em;
+}
+
+.nav-underline {
+    position: absolute;
+    height: 45%;
+    width: calc(100% + 6px);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: $secondary-color;
+    border-radius: 4%;
+}
+
+.title-with-underline-container:hover .nav-underline{
+    cursor: pointer;
+    animation: underlying 0.3s linear forwards;
+}
+
+.nav-title:hover{
+    cursor: pointer;
+    //transform: scale(1.1) translateX(4px);
 }
 
 /* __ Burger Menu button */
 
     .menu-button-circle{
-        //outline: solid 0.5px $primary-color;
+        //outline: solid 2px $secondary-color;
         position: fixed;
-        top: 7px;
+        top: 14px;
         right: 20px;
         height: 50px;
         width: 50px;

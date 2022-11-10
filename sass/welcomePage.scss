@@ -2,18 +2,19 @@
     display: none;
 }
 
-.welcome{
-    position: relative;
+#welcome{
+    //position: relative;
+    //z-index: -2;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('/assets/images/pexels-creative-vix-9754.jpg');
     background-repeat: no-repeat;
     background-size: 1920px 100vh;
     background-position: bottom;
-    z-index: -2;
+    
 }   
 
 .welcome-bloc{
@@ -24,6 +25,8 @@
     height: 60%;
     width: 100%;
     color: $tertiary-color;
+    //outline: $outline red;
+    margin: auto;
 }
 
 .welcome-greetings{
@@ -68,3 +71,23 @@ h1{
     font-family: 'Lustria', serif;
     font-size: 2.2em;
 }
+
+.welcome-memoji{
+    display: none;
+    height: 125px;
+    width: 125px; 
+}
+
+.welcome-memoji-display{
+    display: block;
+}
+
+.welcome-emoji-display{
+    display: none;
+}
+
+
+.welcome-name:hover{
+    cursor: pointer;
+}
+

@@ -1,10 +1,12 @@
-.about{
-    min-height: 70vh;
+#about{
+    //height: 80vh;
     background-color: $quaternary-color;
 }
 
 .about-bloc{
     //background-color: $dev-bg;
+    position: relative;
+    min-height: 80vh;
     padding-top: 20px;
     width: 100%;
 }
@@ -12,6 +14,7 @@
 .about-content{
     //background-color: lightcoral;
     display: flex;
+    //height: 100vh;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -34,6 +37,8 @@
 
 
 .about-description{
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,10 +67,10 @@
 }
 
 .about-cv-button a{
-    outline: $outline red;
+    //outline: $outline red;
     position: relative;
     font-size: 1.2em;
-    text-shadow: 0.5px 0.5px $quinary-color;
+    //text-shadow: 0.5px 0.5px $quinary-color;
     color: $primary-color;
 
 }

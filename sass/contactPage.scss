@@ -1,0 +1,70 @@
+#contact{
+    background-color: $quaternary-color;
+    //outline: $outline red;
+}
+
+.contact-bloc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-content{
+    //background-color: $dev-bg;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-email-container{
+    //outline: $outline red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.contact-copy-icon{
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.contact-copy-icon:hover{
+    cursor: pointer;
+}
+
+.contact-socials{
+    //outline: $outline red;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    
+}
+
+.contact-socials a .contact-logo:hover{
+    cursor: pointer;
+    color: $secondary-color;
+    transform: scale(1.2);
+}
+.contact-logo{
+    font-size: 2em;
+    //margin: 20px;
+    padding: 20px;
+    color: $primary-color;
+}
+
+// .contact-logo:hover{
+//     cursor: pointer;
+//     transform: scale(1.2);
+
+// }

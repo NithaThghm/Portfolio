@@ -1,10 +1,10 @@
-.skills {
-    outline: $outline red;
+#skills {
+    //outline: $outline red;
     display: flex;
-    min-height: 80vh;
+    
     // flex-direction: column;
     // justify-content: space-between;
-    position: relative;
+    //position: relative;
     //z-index: -2;
     background-color: $quaternary-color;
 }
@@ -12,14 +12,14 @@
 .skills-bloc{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 80vh;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .skills-content{
-    background-color: $dev-bg;
+    //background-color: $dev-bg;
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
@@ -32,7 +32,7 @@
 }
 
 .skills-text{
-    outline: $outline red;
+    //outline: $outline red;
     display: flex;
     align-items: center;
     //height: 150px;
@@ -90,7 +90,7 @@
 // }
 
 .logo {
-    outline: solid 1px brown;
+    //outline: solid 1px brown;
     font-size: 425%;
     // height: 40px;
     // width: 40px;
@@ -100,7 +100,7 @@
 }
 
 .logos-container {
-    outline: solid 1px brown;
+    //<a href="#welcome" class="navTitle" href="">Compétences</a>outline: solid 1px brown;
     display: grid;
     grid-template-columns: 150px 150px;
     justify-content: center;

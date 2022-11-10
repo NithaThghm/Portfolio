@@ -26,18 +26,33 @@
         </div>
     
         <nav class="navContainer">
-            <div class="navTitlesContainer">
-                <a class="navTitle" href="">Home</a>
-                <a class="navTitle" href="">A Propos</a>
-                <a class="navTitle" href="">Projets</a>
-                <a class="navTitle" href="">Compétences</a>
-            </div>
+            <ul class="navTitlesContainer">
+                <li class="title-with-underline-container">
+                    <a href="#welcome" class="nav-title">Accueil</a>
+                    <div class="nav-underline"></div>
+                </li>
+                <li class="title-with-underline-container">
+                    <a href="#about" class="nav-title">A Propos</a>
+                    <div class="nav-underline"></div>
+                </li>
+                <li class="title-with-underline-container">
+                    <a href="#skills" class="nav-title">Compétences</a>
+                    <div class="nav-underline"></div>
+                </li>
+                <li class="title-with-underline-container">
+                    <a href="#contact" class="nav-title">Contact</a>
+                    <div class="nav-underline"></div>
+                </li>
+            
+                <!-- <a href="#" class="navTitle" href="">Projets</a> -->
+                
+            </ul>
         </nav>
         
     </header>
 
     <main>
-        <section class="welcome">
+        <section id="welcome">
             <!-- <img class="welcomeIllus1" src="./assets/illustrations/laptop-with-website-by-oblik-studio.svg" alt="illusttion of a laptop"> -->
             <div class="main-wrapper">
                 <div class="welcome-bloc">
@@ -46,7 +61,13 @@
                         <div class="welcome-underline"></div>
                     </div>
                     <p class="welcome-emoji">👋</p>
-                    <p class="welcome-text">Bienvenue sur mon portfolio.<br/>Moi c'est <span class="welcome-name">Nitha.</span> et je suis</p>
+                    <img class="welcome-memoji" src="./assets/illustrations/emojipng.com-13365247.png" alt="">
+                    <p class="welcome-text">
+                        <span>Bienvenue sur mon portfolio.<br/>Moi c'est</span>
+                        <span class="welcome-name">Nitha.</span>
+                        <span>et je suis</span>
+                    </p>
+                    
                     <h1>Développeur Web</h1>
                     <p class="welcome-text todev">&
                         <span>un grimpeur + randonneur amateur  </span>
@@ -55,12 +76,12 @@
                     </p>    
                 </div>
             </div>    
-            <!-- <img class="welcomeIllus2" src="./assets/illustrations/desktop-workspace-by-oblik-studio.svg" alt="illusttion of a laptop"> -->
+            
         </section>
 
         <div class="section-separator"></div>
 
-        <section class="about">
+        <section id="about">
             <div class="main-wrapper">
                 <div class="about-bloc">
                     <div class="title-with-underline-container">
@@ -84,18 +105,25 @@
                             <p>Ce que j'apprends au quotidien me fascine et me passionne ! Vous êtes prêt à me faire une place dans votre équipe ?</p>
                             
                             <div class="about-cv-button">
-                                <a href="https://drive.proton.me/urls/ZXBNMTY6AC#MGYdUQwr33rN" target="_blank" rel="noopener noreferrer">CV</a>
+                                <a href="https://drive.proton.me/urls/ZXBNMTY6AC#MGYdUQwr33rN" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
                                 <div class="about-cv-underline"></div>
                             </div>
                                 
                         </div>
-                    
+
+                        <img class="illustration-1" src="./assets/illustrations/mountain-range-cropped.svg" alt="illustration of a laptop">
                     </div>
+                    
+  
                 </div>
             </div>
         </section>
 
-        <section class="skills">
+        <!-- <div class="section-separator-2">
+            <img class="illustration-1" src="./assets/illustrations/mountain-range-cropped.svg" alt="illustration of a laptop">
+        </div> -->
+       
+        <section id="skills">
             <div class="main-wrapper">
                 <div class="skills-bloc">
                     <div class="title-with-underline-container">
@@ -213,7 +241,45 @@
             </div>
         </section>
 
+        <section id="contact">
+            <div class="main-wrapper">
+                <div class="contact-bloc">
+                    <div class="title-with-underline-container">
+                        <h2 class="section-title">CONTACT</h2>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="section-subtitle">
+                        <h3>Hâte de vous rencontrer</h3>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-email-container">
+                            <img class="contact-copy-icon" src="assets/svg/copy-icon.svg" alt="copy icon">
+                            <p class="contact-email">t.nithachan@proton.me</p>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://www.linkedin.com/in/nithachan/" target="_blank"><i class="devicon-linkedin-plain contact-logo"></i></a>
+                            <a href="https://github.com/NithaThghm" target="_blank"><i class="devicon-github-original contact-logo"></i></a>
+                            <a href="https://gitlab.com/N2Thghm" target="_blank"><i class="devicon-gitlab-plain contact-logo"></i></a>
+                        </div>
+                        
+                    </div>
+                    <img class="illustration-2" src="./assets/illustrations/fox-and-frog-cropped.svg" alt="illustration of a laptop">
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="section-separator-2">
+            
+        </div> -->
+
     </main>
+
+
+    <footer>
+        <p>©2022 | Développé avec <span class="footer-heart">❤</span> par moi (Nitha)</p>
+    </footer>
 
     <script src="./scripts/script.js"></script>
 </body>
