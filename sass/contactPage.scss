@@ -5,7 +5,7 @@
 
 .contact-bloc{
     position: relative;
-    display: flex;
+    //display: flex;
     flex-direction: column;
     min-height: 60vh;
     width: 100%;
@@ -33,6 +33,22 @@
     padding: 20px;
 }
 
+.contact-email-container:hover .contact-email{
+    display: none;
+}
+.contact-email-container:hover .contact-email-copied{
+    display: block;
+}
+
+.contact-email{
+    margin-bottom: 0em;
+}
+
+.contact-email-copied{
+    display: none;
+    margin-bottom: 0;
+}
+
 .contact-copy-icon{
     height: 30px;
     width: 30px;
@@ -49,6 +65,10 @@
     align-items: center;
     height: 80px;
     
+}
+
+.contact-socials a{
+    text-decoration: none;
 }
 
 .contact-socials a .contact-logo:hover{

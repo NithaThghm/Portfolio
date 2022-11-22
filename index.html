@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+    <!-- Bootstrap 5.2.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Mada&family=Prata&display=swap" rel="stylesheet"> 
+    <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,6 +22,9 @@
     </div> -->
 
     <header>
+        
+        <p class="website-title">Portfolio<span class="website-title-point">.</span></p>
+
         <div class="menu-button-circle">
             <div class="menu-button">
                 <span class ="menu-button-burger burger-1" ></span>
@@ -26,6 +34,8 @@
         </div>
     
         <nav class="navContainer">
+            
+
             <ul class="navTitlesContainer">
                 <li class="title-with-underline-container">
                     <a href="#welcome" class="nav-title">Accueil</a>
@@ -40,6 +50,10 @@
                     <div class="nav-underline"></div>
                 </li>
                 <li class="title-with-underline-container">
+                    <a href="#projects" class="nav-title">Projets</a>
+                    <div class="nav-underline"></div>
+                </li>
+                <li class="title-with-underline-container">
                     <a href="#contact" class="nav-title">Contact</a>
                     <div class="nav-underline"></div>
                 </li>
@@ -51,7 +65,7 @@
         
     </header>
 
-    <main>
+    <main id="main">
         <section id="welcome">
             <!-- <img class="welcomeIllus1" src="./assets/illustrations/laptop-with-website-by-oblik-studio.svg" alt="illusttion of a laptop"> -->
             <div class="main-wrapper">
@@ -94,30 +108,41 @@
                     </div>
 
                     <div class="about-content">
-                        <img class="about-profile-picture" src="assets/images/20220827_160746.jpg" alt="photo de profil">
+                        
+                        <div class="about-picture">
+                            <img class="about-profile-picture" src="assets/images/20220827_160746.jpg" alt="photo de profil">
+
+                        </div>
+                        
                         <div class="about-description">
                             
-                            <p>Après avoir exercé durant 5 ans en tant qu'ingénieur amélioration continue pour un groupe dans le domaine de la métallurgie, j'ai ressenti le besoin de changer d'univers professionnel.</p>
+                            <p>Après avoir été, durant 5 ans, ingénieur amélioration continue pour une entreprise dans le secteur de la métallurgie et l'alimentaire, j'ai eu envie de changer d'univers professionnel.</p>
                             <p>J'ai toujours eût une curiosité prononcé pour le monde du numérique, fasciné par son fonctionnement, ses technologies et son potentiel qui repousse toujours les limites du possible.</p>
                             <p>Aujourd'hui le numérique est au coeur de nos sociétés et je suis intrigué par le futur d'internet.</p>
                             <p>J'ai donc décidé d'être un acteur et de découvrir par moi-même les entrailles d'internet.</p>
-                            <p>J'ai choisi de me reconvertir en tant que développeur web et web mobile, ce fut un choix difficile à faire mais que je ne regrette absolument pas.</p>
-                            <p>Ce que j'apprends au quotidien me fascine et me passionne ! Vous êtes prêt à me faire une place dans votre équipe ?</p>
+                            <p>J'ai choisi de me reconvertir en tant que développeur web et web mobile en suivant une formation de développeur fullstack d'une période de 9 mois.</p>
+                            <p>Ce que j'apprends au quotidien me fascine et me passionne !</p>
+                            <br/>
+                            <p>Vous êtes prêt à me faire une place dans votre équipe ? 😀</p>
+                            
                             
                             <div class="about-cv-button">
                                 <a href="https://drive.proton.me/urls/ZXBNMTY6AC#MGYdUQwr33rN" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
-                                <div class="about-cv-underline"></div>
                             </div>
-                                
+  
                         </div>
-
-                        <img class="illustration-1" src="./assets/illustrations/mountain-range-cropped.svg" alt="illustration of a laptop">
+                 
+                            
                     </div>
                     
   
                 </div>
             </div>
+            <img class="illustration-1" src="./assets/illustrations/mountain-range-cropped.svg" alt="illustration of a laptop">
         </section>
+        
+        <!-- <div class="illustration-1-container">
+        </div> -->
 
         <!-- <div class="section-separator-2">
             <img class="illustration-1" src="./assets/illustrations/mountain-range-cropped.svg" alt="illustration of a laptop">
@@ -241,6 +266,129 @@
             </div>
         </section>
 
+        <section id="projects">
+            <div class="main-wrapper">
+                <div class="projects-bloc">
+                    <div class="title-with-underline-container">
+                        <h2 class="section-title">PROJETS</h2>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="section-subtitle">
+                        <h3>Les projets dont je suis fier de vous présenter</h3>
+                    </div>
+
+                    <div class="projects-content">
+
+                        <div class="project-content">
+                            <div class="project-resume">
+                                <div class="project-info">
+                                    <div class="project-title">Lectio.</div>
+                                    <div class="project-more-button">...</div>
+                                </div>
+                                <div class="project-info-shadow"></div>
+                            </div>
+                            <div id="Lectio." class="project-more-info">
+                                <div class="project-description">
+                                    Lectio est mon projet de fin de formation.<br/>
+                                    Le site sera une alternative au site GoodReads.<br>
+                                    Il permettra de suivre ses livres lu, de créer des readlists, de noter et commenter un livre.<br><br>
+                                    Technologies : Design, Maquettage, Authentification, BDD, POO.
+                                    <div class="project-content-icons">
+                                        <i class="devicon-php-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-symfony-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-phpstorm-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-docker-plain logo" alt="html5 logo"></i>
+                                    </div>
+                                    <div class="not-online">En dév.</div>
+                                </div>
+
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="./assets/images/screenshot_lectio_homepage.png" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="./assets/images/screenshot_lectio_homepage_bottom.png" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="./assets/images/screenshot_lectio_bookpage.png" class="d-block w-100" alt="...">
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true">❮</span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true">❯</span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                      </div>
+
+                            </div> 
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-resume">
+                                <div class="project-info">
+                                    <div class="project-title">NotaRestau</div>
+                                    <div class="project-more-button">...</div>
+                                </div>
+                                <div class="project-info-shadow"></div>
+                            </div>
+                            <div id="NotaRestau" class="project-more-info">
+                                <div class="project-description">
+                                    <p>NotaRestau est un site créé dans le cadre de ma formation.<br/>
+                                    Le site permet à un restaurateur d'ajouter son restaurant et permet aux utilisateurs de noter et de commenter un restaurant.<br><br>
+                                    Technologies : CRUD, Back-office, Authentification, BDD, POO, Bootstrap, Bootstrap Theme.</p>
+                                    <div class="project-content-icons">
+                                        <i class="devicon-php-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-symfony-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-phpstorm-plain logo" alt="html5 logo"></i>
+                                        <i class="devicon-docker-plain logo" alt="html5 logo"></i>
+                                    </div>
+                                    <div class="not-online">Non en ligne</div>
+                                </div>
+
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="./assets/images/NotaRestau-home-screenshot.png" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="./assets/images/NotaRestau-home-screenshot.png" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="./assets/images/NotaRestau-home-screenshot.png" class="d-block w-100" alt="...">
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true">❮</span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true">❯</span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                      </div>
+
+                            </div> 
+                        </div>
+                        
+                    </div>
+            </div>
+        </section>
+
         <section id="contact">
             <div class="main-wrapper">
                 <div class="contact-bloc">
@@ -257,6 +405,7 @@
                         <div class="contact-email-container">
                             <img class="contact-copy-icon" src="assets/svg/copy-icon.svg" alt="copy icon">
                             <p class="contact-email">t.nithachan@proton.me</p>
+                            <p class="contact-email-copied">cliquer pour copier</p>
                         </div>
                         <div class="contact-socials">
                             <a href="https://www.linkedin.com/in/nithachan/" target="_blank"><i class="devicon-linkedin-plain contact-logo"></i></a>
@@ -278,9 +427,12 @@
 
 
     <footer>
-        <p>©2022 | Développé avec <span class="footer-heart">❤</span> par moi (Nitha)</p>
+        <p>©2022 | Développé avec <span class="footer-heart">❤</span> par Nitha.</p>
     </footer>
 
+    <!-- Bootstrap 5.2.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- My Javascripts -->
     <script src="./scripts/script.js"></script>
 </body>
 </html>

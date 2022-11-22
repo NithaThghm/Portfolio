@@ -4,7 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
 
+a{
+    text-decoration: none;
 }
 
 // body{
@@ -42,6 +45,10 @@ footer {
     border-top: solid 2px $secondary-color;
 }
 
+.main-bloc{
+    display: none;
+}
+
 .footer-heart {
     display: inline-block;
     font-size: 1.5em;
@@ -54,7 +61,7 @@ footer {
 .section-separator {
     height: 110px;
     background: rgb(27, 41, 42);
-    background: linear-gradient(180deg, rgba(27, 41, 42, 1) 2%, rgba(217, 218, 212, 0.3) 99%);
+    background: linear-gradient(180deg, rgba(27, 41, 42, 1) 2%, rgba(217, 218, 212, 1) 99%);
 }
 
 /* __ Wrapper */
@@ -95,13 +102,13 @@ footer {
 
 @keyframes underlying{
     0%{
-        transform: skew(-13deg) translateX(-3px) scaleX(0);
+        transform: skew(-13deg) translateX(-10px) scaleX(0);
     }
     50%{
-        transform: skew(-13deg) translateX(-3px) scaleX(0.5);
+        transform: skew(-13deg) translateX(-10px) scaleX(0.5);
     }
     100%{
-        transform: skew(-13deg) translateX(-3px) scaleX(1);
+        transform: skew(-13deg) translateX(-10px) scaleX(1);
     }
 }
 
@@ -157,11 +164,23 @@ footer {
     //overflow-y: visible;
 }
 
+.illustration-1-container{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    outline: $outline red;
+    background-color: $quaternary-color;
+}
+
 .illustration-1 {
-    position: absolute;
-    //height: 100%;
-    //right: 2%;
-    bottom: 0;
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //height: 30vh;
+    width: 90%;
+    left: 5%;
+    //bottom: 0;
 }
 
 // .section-separator-3{

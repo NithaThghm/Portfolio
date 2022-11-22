@@ -37,6 +37,7 @@
 
 
 .about-description{
+    //outline: $outline red;
     position: relative;
     z-index: 1;
     display: flex;
@@ -56,41 +57,68 @@
 
 /* __ CV downloader button */
 
-.about-cv-button{
-    position: relative;
-    z-index: 1;
+.about-picture{
     display: flex;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-cv-button{
+    //position: absolute;
+    z-index: 1;
+    right: 25px;
+    bottom: -60px;
+    display: flex;
+    padding: 6px 18px;
+    margin-top: 20px;
     justify-content: flex-end;
-    width: 90%;
+    width: fit-content;
+    background-color: $primary-color;
+    border: solid 1px $secondary-color;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+    font-family: 'Mada', sans-serif;
+    //font-size: 1.2em;
+    
 }
 
 .about-cv-button a{
     //outline: $outline red;
     position: relative;
-    font-size: 1.2em;
+    //font-size: 1.2em;
     //text-shadow: 0.5px 0.5px $quinary-color;
-    color: $primary-color;
+    color: $quaternary-color;
 
 }
 
-.about-cv-underline{
-    position: absolute;
-    z-index: -1;
-    height: 10%;
-    width: 5%;
-    bottom: 0;
-    transform: skew(-12deg) translateX(0%) scaleX(100%);
+.about-cv-button:hover{
     background-color: $secondary-color;
+    transform: scale(1.05);
 }
+
+.about-cv-button:hover a{
+    color: $primary-color;
+}
+
+// .about-cv-underline{
+//     position: absolute;
+//     z-index: -1;
+//     height: 10%;
+//     width: 5%;
+//     bottom: 0;
+//     transform: skew(-12deg) translateX(0%) scaleX(100%);
+//     background-color: $secondary-color;
+// }
 
 /* __ CV downloader button aanimation*/
-.about-cv-button:hover a{
-    color: $tertiary-color;
-}
+// .about-cv-button:hover a{
+//     color: $tertiary-color;
+// }
 
-.about-cv-button:hover .about-cv-underline{
-    cursor: pointer;
-    transform: skew(-12deg) scaleY(5) translateX(0%) translateY(-50%);
-}
+
+// .about-cv-button:hover .about-cv-underline{
+//     cursor: pointer;
+//     transform: skew(-12deg) scaleY(5) translateX(0%) translateY(-50%);
+// }

@@ -6,7 +6,9 @@
 
     .illustration-1{
         width: 60%;
-        right: 0;
+        left: 20%;
+        padding-bottom: 0px;
+        //transform: translateX(50vw);
         //transform: translateY(-160px);
     }
 
@@ -43,14 +45,28 @@
 
     .skills-text{
         font-size: 1.2em;
-        text-align: left;
+        //text-align: left;
+    }
+
+    /* __ Project Page */
+
+    .project-description{
+        font-size: 1.2em;
+    }
+
+    .project-content-icons{
+        font-size: 0.6em;
+    }
+
+    /* __ Contact Page */
+
+    .contact-content{
+        justify-content: center;
     }
 
 
-}    .skills-text{
-    font-size: 1.2em;
-    text-align: left;
 }
+
 @media screen and (min-width: 737px){
 
     /* __General */
@@ -78,8 +94,9 @@
     /* __ Illustration */
 
     .illustration-1{
-        width: 55%;
-        //right: 5%;
+        width: 40%;
+        right: -60%;
+        left: auto;
         //transform: translateY(-225px) translateX(40px);
     }
 
@@ -121,6 +138,10 @@
     }
     
     /* __ Skills Page */
+
+    .skills-content{
+        min-height: 60vh;
+    }
     
     .logos-container{
         grid-template-columns: 150px 150px 150px 150px;
@@ -147,8 +168,8 @@
     /* __ Illustration */
 
     .illustration-1{
-        width: 50%;
-        //transform: translateY(-250px) translateX(40px);
+        width: 40%;
+        right: -60%;
     }
 
     .illustration-2{
@@ -225,6 +246,18 @@
         font-size: 1.3em;
     }
 
+    /* __ Project Page */
+
+    .project-content{
+        width: 80%;
+    }
+
+    /* __ Contact page */
+
+    .contact-content{
+        justify-content: center;
+    }
+
 
 }
 
@@ -249,10 +282,9 @@
     }
     
     /* __ Illustration */
-
     .illustration-1{
-        width: 40%;
-        //transform: translateY(-250px) translateX(40px);
+        width: 30%;
+        right: -70%;
     }
 
     .illustration-2{
@@ -314,5 +346,28 @@
         font-size: 1.4em;
     }
     
+    /* __ Projects Page */
+    .projects-bloc{
+        min-height: 60vh;
+    }
+
+    .project-content{
+        width: 90%;
+    }
+    .project-info{
+        font-size: 1.5em;
+    }
+
+    .project-description{
+        font-size: 1.4em;
+    }
+
+    .project-content-icons{
+        font-size: 0.8em;
+    }
+
+    .not-online{
+        font-size: 0.9em;
+    }
 
 }

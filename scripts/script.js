@@ -1,8 +1,11 @@
+console.log(navigator.language);
+
 //Afficher le menu déroulant au clic du burger menu
 
 const navContainer = document.querySelector(".navContainer");
 const menuButton = document.querySelector('.menu-button');
 const navTitle = document.querySelectorAll('.nav-title');
+const main = document.getElementById('main');
 
 menuButton.addEventListener("click", ()=>{
     
@@ -10,10 +13,12 @@ menuButton.addEventListener("click", ()=>{
         navContainer.classList.toggle("showMenu");
         menuButton.classList.toggle("menu-open");
         menuButton.classList.toggle("menu-close");
+        main.classList.toggle('main-bloc');
         
     }else{
         navContainer.classList.toggle("showMenu");
         menuButton.classList.toggle("menu-open");
+        main.classList.toggle('main-bloc');
         if(menuButton.classList.toggle("menu-close")){
             menuButton.classList.toggle("menu-close");
         }
@@ -33,10 +38,12 @@ navTitle.forEach(element => {
             navContainer.classList.toggle("showMenu");
             menuButton.classList.toggle("menu-open");
             menuButton.classList.toggle("menu-close");
+            main.classList.toggle('main-bloc');
             
         }else{
             navContainer.classList.toggle("showMenu");
             menuButton.classList.toggle("menu-open");
+            main.classList.toggle('main-bloc');
             if(menuButton.classList.toggle("menu-close")){
                 menuButton.classList.toggle("menu-close");
             }
@@ -44,8 +51,6 @@ navTitle.forEach(element => {
         
     })
 });
-
-
 
 /* __ Fonction pour copier mon adresse mail dans le clipboard */
 
@@ -74,7 +79,28 @@ welcomeName.addEventListener("mouseleave", ()=>{
 })
 
 
+/* __ Fonction pour afficher plus d'informations du projet */
 
+const projectsContents = document.querySelector('.projects-content').children;
+
+document.querySelectorAll('.project-more-button').forEach(occurence => {
+    occurence.addEventListener('click', (e) => {
+        let cible = document.getElementById(e.target.previousElementSibling.innerHTML);  
+        let parent = e.target.parentElement;
+        console.log(parent);
+        cible.classList.toggle("project-more-show");
+        parent.classList.toggle("project-info-move");
+    });
+});
+
+/* __ Fonction pour donner un effet de mouvement au projet content au clic */
+
+const moreButtons = document.querySelectorAll('.project-more-button');
+
+
+// for(let i = 0; i<projectsContents.length; i++){
+//     console.log(projectsContents.item(i).children);
+// }
 
 // const screen990 = window.matchMedia("(min-width: 990px)")
 

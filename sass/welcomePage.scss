@@ -74,8 +74,8 @@ h1{
 
 .welcome-memoji{
     display: none;
-    height: 125px;
-    width: 125px; 
+    height: 106px;
+    width: auto; 
 }
 
 .welcome-memoji-display{
@@ -91,3 +91,20 @@ h1{
     cursor: pointer;
 }
 
+
+// .welcome-emoji:hover{
+//     animation: move-hand 0.5s linear forwards infinite alternate;
+// }
+
+// @keyframes move-hand{
+//     0%{
+//         transform: rotate(-35deg);
+//     }
+//     50%{
+//         transform: rotate(0deg);
+//     }
+//     100%{
+//         transform: rotate(60deg);
+//     }
+
+// }

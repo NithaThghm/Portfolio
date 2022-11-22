@@ -10,7 +10,7 @@
 }
 
 .skills-bloc{
-    display: flex;
+    //display: flex;
     flex-direction: column;
     min-height: 80vh;
     width: 100%;
@@ -37,7 +37,11 @@
     align-items: center;
     //height: 150px;
     text-align: center;
-    
+}
+
+.skills-text p{
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 // .skillsSession-main-container {
