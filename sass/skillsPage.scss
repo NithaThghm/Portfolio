@@ -1,0 +1,143 @@
+#skills {
+    //outline: $outline red;
+    display: flex;
+    
+    // flex-direction: column;
+    // justify-content: space-between;
+    //position: relative;
+    //z-index: -2;
+    background-color: $quaternary-color;
+}
+
+.skills-bloc{
+    //display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills-content{
+    //background-color: $dev-bg;
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    min-height: fit-content;
+    width:100%;
+    font-family: 'Mada', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.skills-text{
+    //outline: $outline red;
+    display: flex;
+    align-items: center;
+    //height: 150px;
+    text-align: center;
+}
+
+.skills-text p{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+// .skillsSession-main-container {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: space-between;
+//     //height: 1050px;
+//     padding: 20px 20px;
+
+//     //background-color: lightblue;
+// }
+
+// .skillsSession-titles {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     height: 70px;
+//     //margin-top: 20px;
+
+//     outline: solid 1px black;
+// }
+
+
+// .skillsSession-titles h2{
+//     color: #DC4646;
+//     font-size: 1.2em;
+//     font-family: 'Roboto Flex', sans-serif;
+// }
+
+// .skillsSession-titles h3{
+//     width: 100%;
+//     font-size: 1.7em;
+//     font-family: 'Slabo 27px', serif;
+// }
+
+// .skillsSession-title{
+//     position: relative;
+// }
+
+// .skillsSession-underline{
+//     content:"";
+//     position: absolute;
+//     z-index: -1;
+//     height: 1.5em;
+//     width: 100px;
+//     bottom: 0;
+//     transform: skew(-15deg) translateX(0%);
+//     background-color: lightseagreen;
+// }
+
+.logo {
+    //outline: solid 1px brown;
+    font-size: 425%;
+    // height: 40px;
+    // width: 40px;
+    //background-color: lightcyan;
+    // object-fit: cover;
+    //filter: invert(100%) contrast(100%) sepia(0%);
+}
+
+.logos-container {
+    //<a href="#welcome" class="navTitle" href="">Compétences</a>outline: solid 1px brown;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+    place-items: center;
+    row-gap: 20px;
+    //flex-flow: row wrap;
+   
+    //align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo-bloc {
+    //outline: solid black 1px;
+    //background-color: lightgreen;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-color;
+    //margin-bottom: 20px;
+    height: 110px;
+    width: 125px;
+}
+
+.logo-bloc span{
+    font-size: 0.9em;
+}
+
+.logo-bloc hr{
+    width: 40px;
+}
+
+.logo-bloc:hover{
+    color: #0C5D25;
+}
